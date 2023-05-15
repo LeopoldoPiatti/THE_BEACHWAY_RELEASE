@@ -462,7 +462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   life: 1
-  life_max: 1
+  life_max: 3
   deathMode: 2
   checkpoint: {fileID: 0}
   deathDelay: 1
