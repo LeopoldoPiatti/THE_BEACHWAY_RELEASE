@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 170250337}
   - component: {fileID: 170250336}
   - component: {fileID: 170250335}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -537,7 +537,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 21, y: -466}
+  m_AnchoredPosition: {x: 21, y: -429}
   m_SizeDelta: {x: -1249.9253, y: -856.5585}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1746628310
@@ -616,8 +616,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 588d2b867c18fcc49bdf115b8421396b, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -692,9 +692,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Skip
-
-'
+  m_text: SKIP
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: f3fcc68918151024db5b3985144cafbf, type: 2}
   m_sharedMaterial: {fileID: 4661244316726358330, guid: f3fcc68918151024db5b3985144cafbf, type: 2}
@@ -721,8 +719,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 71.9
-  m_fontSizeBase: 71.9
+  m_fontSize: 72
+  m_fontSizeBase: 72
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -851,3 +849,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5679b262e3bdcf8498f1a69b4ccce3a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  newPosition: {fileID: 0}
+  sceneName: 
