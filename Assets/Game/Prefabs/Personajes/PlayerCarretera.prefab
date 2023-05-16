@@ -466,6 +466,9 @@ MonoBehaviour:
   deathMode: 2
   checkpoint: {fileID: 0}
   deathDelay: 1
+  sceneToLoad: 
+  crashParticlePrefab: {fileID: 0}
+  audioCrash: {fileID: 0}
 --- !u!114 &3515329273919329724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -516,7 +519,7 @@ MonoBehaviour:
   moveUpDown: 3
   moveSpeed: 9
   boostSpeed: 12
-  boostDuration: 3
+  boostDuration: 8
   boostSlider: {fileID: 0}
   boostFillAmount: 1
   animMountain: {fileID: 3515329273968343345}

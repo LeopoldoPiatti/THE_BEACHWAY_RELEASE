@@ -45,8 +45,9 @@ public class LoadLevelV2 : MonoBehaviour
             //objectToDeactivate.SetActive(false);
             SceneManager.LoadScene(sceneName);
             // Cambiar la posición del jugador en los ejes X e Y
-            other.transform.position = newPosition.position;
+            other.transform.SetPositionAndRotation(newPosition.position, newPosition.rotation);
         }
 
 }
 }
+
