@@ -18,15 +18,17 @@ public class Timer : MonoBehaviour
 
     private void Update()
     {
-        tiempo.text = (startTime - Time.time).ToString("00.00");
+        float timeRemaining = duration - (Time.time - startTime);
+        int minutes = Mathf.FloorToInt(timeRemaining / 60f);
+        int seconds = Mathf.FloorToInt(timeRemaining % 60f);
+
+        tiempo.text = string.Format("{0:00}:{1:00}", minutes, seconds);
+
         // Verificar si el temporizador está en funcionamiento
         if (isTimerRunning)
         {
-            // Restar el tiempo en cada actualización del marco
-            duration -= Time.deltaTime;
-
             // Verificar si el temporizador ha terminado
-            if (duration <= 0f)
+            if (timeRemaining <= 0f)
             {
                 // Temporizador completado, matar al jugador
                 KillPlayer();
@@ -37,6 +39,7 @@ public class Timer : MonoBehaviour
     private void StartTimer()
     {
         // Iniciar el temporizador
+        startTime = Time.time;
         isTimerRunning = true;
     }
 
@@ -45,4 +48,5 @@ public class Timer : MonoBehaviour
         SceneManager.LoadScene(gameOverSceneName);
     }
 }
+
 
