@@ -26,7 +26,7 @@ public class LivesUI : MonoBehaviour
 
     void UpdateLivesText(int lives)
     {
-        livesText.text = "Lives: " + lives.ToString();
+        livesText.text = "" + lives.ToString();
         //UpdateTimerUI();
     }
 

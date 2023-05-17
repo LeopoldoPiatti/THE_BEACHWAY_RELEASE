@@ -20,7 +20,7 @@ public class BikeControllerKeyboard : MonoBehaviour
     public AudioClip audioBoost;
     public AudioClip audioGolpe;
     public GameObject crashParticlePrefab;
-
+    
     void Start()
     {
         bikeRigidbody = GetComponent<Rigidbody2D>();
@@ -31,6 +31,7 @@ public class BikeControllerKeyboard : MonoBehaviour
         animCarretera = GameObject.Find("BikeCarretera").GetComponent<Animator>();
         animCiudad = GameObject.Find("BikeCiudad").GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
+       
 
     }
 
@@ -61,7 +62,7 @@ public class BikeControllerKeyboard : MonoBehaviour
         }        
         animCarretera.SetBool("CarreteraMove", true);
         animCiudad.SetBool("CiudadMove", true);
-        animMountain.SetBool("BikeAni", true);
+        animMountain.SetBool("BikeAni", true); 
     }
 
     void FixedUpdate()
